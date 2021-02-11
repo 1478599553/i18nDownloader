@@ -9,6 +9,7 @@ import shutil
 import requests
 import os
 import time
+import sys
 
 
 Doit = True
@@ -92,7 +93,7 @@ def write116():
      tkinter.messagebox.showinfo('成功！','已将下载资源包版本设为1.16')
 
 def Exit():
-     os._exit(0)
+     sys.exit()
 
 def pre():
      if os.path.exists('') == False:
@@ -174,5 +175,5 @@ while Doit:
                Exit.pack()
                
                root.mainloop()
-               time.sleep(1)
+               
      
